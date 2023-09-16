@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Lato&family=Playfair+Display&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+nav{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    gap: 30%;
+    align-items: center;
+    padding: 40px 80px 60px;
+    background-color: black;
+}
+
+nav .arrowBtn{
+    display: none;
+    border: 2px solid white;
+}
+
+nav .desktopUl{
+    display: flex;
+    list-style: none;
+    gap: 20%;
+    /* Roboto font-family */
+    font-family: 'Roboto', sans-serif;
+}
+
+nav .responsiveUl{
+    display: none;
+}
+
+nav .getInTouch{
+    background-color: yellow;
+    padding: 10px;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav h4{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.firstDiv {
+    color: white;
+    padding: 40px 80px 60px;
+    background-color: black;
+}
+
+.firstDiv h2{
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+}
+
+.firstDiv>p{
+    margin: 10px 0 50px;
+    line-height: 25px;
+}
+.firstDiv p{
+    color: rgb(191, 190, 190);
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+.firstDiv .logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.firstDiv .projectLinks{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 50px;
+    margin: 50px 0px;
+}
+
+.firstDiv .projectLinks .project{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.firstDiv .projectLinks .project .pLinks{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+.firstDiv .projectLinks .project .project-desc{
+    color: rgb(191, 190, 190);
+    line-height: 25px;
+}
+
+.firstDiv .projectLinks a{
+    text-decoration: none;
+    color: white;
+}
+
+.firstDiv .projectLinks a i{
+    margin-left: 10px;
+}
+
+
+.co-founderDivs{
+    color: white;
+    display: flex;
+    background-color: rgb(53, 53, 53);
+    padding: 50px 80px; 
+    gap: 90px;
+    
+
+}
+
+.co-founderDivs .co-founderDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.co-founderDivs .co-founderDiv p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+    color: rgb(191, 190, 190);
+}
+
+.co-founderDivs .withH3 h3{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.4px;
+}
+
+.interestedDiv{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    padding: 50px 80px; 
+    line-height: 25px;
+    background-color: black;
+    
+}
+
+.interestedDiv p{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(191, 190, 190);
+
+}
+
+.interestedDiv button{
+    background-color: yellow;
+    padding: 10px 7px;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    width: 120px;
+    margin-top: 10px;
+}
+
+.interestedDiv h3{
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+}
+
+footer{
+    display: flex;
+    color: white;
+    padding: 30px 80px;
+    background-color: rgb(53, 53, 53);
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .footer-logos{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+/* For tablet view */
+@media  (max-width: 991px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 30px 50px;
+        
+    }
+    
+    nav .arrowBtn{
+        display: block;
+        color: rgb(255, 255, 255);
+        background-color: transparent;
+        border: none;
+        font-size: 30px;
+
+        
+    }
+
+    nav .desktopUl, nav .getInTouch{
+        display: none;
+    }
+
+    nav h4{
+        font-size: 25px;
+    }
+
+    .firstDiv {
+        color: white;
+        padding: 30px 30px 50px;
+        background-color: black;
+    }
+
+    .firstDiv h2{
+        font-size: 40px;
+        display: block;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .firstDiv>p{
+        margin: 10px 0 50px;
+        line-height: 25px;
+        font-size: 20px;
+    }
+   
+
+    .firstDiv .logos{
+        display: flex;
+        gap: 10%;
+        justify-content: space-evenly;
+        padding: 0px 80px;
+        /* align-items: left; */
+        flex-wrap: wrap;
+    }
+
+    .firstDiv .logos svg{
+        margin-bottom: 30px;
+    }
+
+    .firstDiv .projectLinks{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        gap: 50px;
+        margin: 50px 0px;
+    }
+    
+    .firstDiv .projectLinks .project .project-desc{
+        color: rgb(191, 190, 190);
+        line-height: 25px;
+        font-size: 20px;
+    }
+    
+    .co-founderDivs{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(53, 53, 53);
+        padding: 50px 30px; 
+        gap: 60px;
+        
+    
+    }
+    
+    
+    
+    .co-founderDivs .co-founderDiv p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 25px;
+        color: rgb(191, 190, 190);
+        font-size: 18px;
+    }
+    
+    .co-founderDivs .withH3 h3{
+        font-size: 30px;
+        font-family: 'Playfair Display', serif;
+        letter-spacing: 0.4px;
+    }
+    
+    .interestedDiv{
+        display: flex;
+        color: white;
+        padding: 50px 30px; 
+        line-height: 25px;
+        background-color: black;
+        
+    }
+    
+    .interestedDiv p{
+        font-family: 'Roboto', sans-serif;
+        color: rgb(191, 190, 190);
+        font-size: 20px;
+        margin-top: 5px;
+        display: block;
+    
+    }
+    
+    .interestedDiv button{
+        background-color: yellow;
+        padding: 10px 7px;
+        letter-spacing: 1px;
+        color: black;
+        border:none;
+        font-family: 'Playfair Display', serif;
+        width: 140px;
+        margin-top:10px;
+        font-size: 18px;
+       
+    }
+    
+    .interestedDiv h3{
+        font-size: 40px;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        line-height: 50px;
+    }
+
+}
