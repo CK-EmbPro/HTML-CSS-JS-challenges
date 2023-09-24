@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Chirp. Dashboard</title>
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+  google.charts.load('current', {
+  callback: function () {
+    drawChart();
+    $(window).resize(drawChart);
+  },
+  packages:['corechart']
+});
+  google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'Tweets'],
+      ['2004',  300],
+      ['2005',  700],
+      ['2006',  400],
+      ['2007',  900],
+      ['2008',  500],
+      ['2009',  1000],
+      ['2010',  600],
+      ['2011',  1100]
+    ]);
+
+    var options = {
+      title: 'Twitter Analytics',
+      curveType: 'function',
+      legend: { position: 'bottom' },
+      width: '100%',
+      height: '100%',
+      chartArea:{
+        width: '80%',
+        height: '80%'
+      }
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+    chart.draw(data, options);
+  }
+</script>
+</head>
+<body>
+    <nav>
+        <h3>Chirp.</h3>
+        <ul>
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>FAQ</li>
+        </ul>
+
+        <button class="signInBtn" >
+            <i class="fa-brands fa-twitter"></i>
+            Sign in with Twitter
+        </button>
+
+        <div class="hiddenDiv">
+            
+            <ul>
+                <li>Home</li>
+                <li>Pricing</li>
+                <li>FAQ</li>
+            </ul>
+            <button class="signInBtn" >
+                <i class="fa-brands fa-twitter"></i>
+                Sign in with Twitter
+            </button>
+        </div>
+
+        <button class="arrowBtn">
+            <i class="fa-solid fa-arrow-down-wide-short"></i>
+        </button>
+    </nav>
+
+    <div class="twitterAnalytics">
+        <div class="twitterDesc">
+            <h1>Twitter Analytics taken to a whole new level</h1>
+            <p>Chirp is a suite of Twitter Analytics that will help you better understand you audience, which tweets they like, and most importantly, when they are the most active on Twitter</p>
+
+            <div class="learnMore">
+                <button class="signInBtn" >
+                    <i class="fa-brands fa-twitter"></i>
+                    Sign in with Twitter
+                </button>
+
+                <h3>Learn more<i class="fa-solid fa-arrow-right"></i></h3>
+
+            </div>
+            <div class="consecutiveImgs">
+                <img src="./images/img1.jpg" alt="No-img">
+                <img src="./images/img2.jpg" alt="No-img">
+                <img src="./images/img3.jpg" alt="No-img">
+                <img src="./images/img4.jpg" alt="No-img">
+                <img src="./images/img5.jpg" alt="No-img">
+                <img src="./images/img6.jpg" alt="No-img">
+                <img src="./images/img7.jpg" alt="No-img">
+                <img src="./images/img8.jpg" alt="No-img">
+                <img src="./images/img9.jpg" alt="No-img">
+            </div>
+
+            <p class="joinParagraph">Join <span>195</span> who have analysed their followers and scheduled <span>1342</span> tweets</p>
+        </div>
+
+        <div class="graphAnalytics">
+            <div class="graphContainer">
+                <div class="otherData">
+                    <div>
+                        <img src="./images/img1.jpg" alt="No-img">
+                        <h4>@sara_may <span>live data</span></h4>
+                    </div>
+                    <button>Total <i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+
+                <div id="curve_chart" class="chart" ></div>
+
+            </div>
+
+            <div class="impressions">
+                <h4>Impressions <span>12,723</span></h4>
+                <p>times people saw this Tweet on Twitter</p>
+            </div>
+
+
+            <div class="engagement">
+                <h4>Totalengagement<span>1,401</span></h4>
+                <p>times people saw this Tweet on Twitter</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="featuresContainer">
+        <h2>Features that help you Tweet Smarter</h2>
+        <div class="featuresDiv">
+            <div class="featureBox">
+                <img src="./images/icon/analytics.png" alt="No-img">
+                <h4>Analytics</h4>
+                <p>We constantly monitor your audience as it grows -- so you can Tweet when your followers are most likely to be online and ready to engage  with your content</p>
+            </div>
+
+            <div class="featureBox">
+                <img src="./images/icon/emoji.png" alt="No-img">
+                <h4>Smart Analyzer</h4>
+                <p>Chirp automatically  recognizes your followers' most active timer and automatically sends you notifications if you're missing out on an opportunity.</p>
+            </div>
+
+            <div class="featureBox">
+                <img src="./images/icon/tweets.png" alt="No-img">
+                <h4>Scheduled your Tweets</h4>
+                <p>Quality tweets drive tons of engagement. With Chirp, you can write tweets in an advance and schedule them when your audience is most likely to read.</p>
+            </div>
+
+            <div class="featureBox">
+                <img src="./images/icon/brightness-removebg-preview.png" alt="No-img">
+                <h4>Dark mode</h4>
+                <p>Friendly on the eyes, no matter what time you write your Tweets. All colors are chosen to make sure your eyes are at ease at all times.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ourCustomers">
+        <h1>What our customers say</h1>
+        <div class="customersDiv">
+            <div class="customer">
+                <div class="custMetaData">
+                    <div>
+                        <img src="./images/img1.jpg" alt="No-img">
+                        <h4>Sara May <span>@sara_may</span></h4>
+                    </div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <p>I just tried @chirp and it's amazing, love the analytics I can see.</p>
+                <p><span><i class="fa-regular fa-heart"></i>2</span> March 2, 2021</p>
+            </div>
+
+            <div class="customer">
+                <div class="custMetaData">
+                    <div>
+                        <img src="./images/img2.jpg" alt="No-img">
+                        <h4>Jack Scott <span>@jackscott_</span></h4>
+                    </div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <p>I initially started using Chirp to support the co-founder as I personally knew him, but after having tried it out for a few weeks, I can genuinely say this changed my Twitter game.</p>
+                <p><span><i class="fa-regular fa-heart"></i>32</span> March 2, 2021</p>
+            </div>
+
+            <div class="customer">
+                <div class="custMetaData">
+                    <div>
+                        <img src="./images/img3.jpg" alt="No-img">
+                        <h4>Jessica May <span>@jmay98</span></h4>
+                    </div>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <p>Absolutely love everything about Chirp, from the design to how everthing works smoothly.</p>
+                <p><span><i class="fa-regular fa-heart"></i>221</span> March 2, 2021</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricePlan">
+        <h2>One simple price plan.</h2>
+        <p>Start growing your Twitter account by analyzing your follower's patterns.</p>
+
+        <div class="actualPrice">
+            <p>Monthly</p>
+            <h1>$9<span>/mo</span></h1>
+            <div>
+                <p><i class="fa-solid fa-check"></i>Unlimited *scheduled tweets and threads</p>
+                <p><i class="fa-solid fa-check"></i>Schedule up to 3 weeks in advance</p>
+                <p><i class="fa-solid fa-check"></i>Real-time audience analytics tracking up to 5k followers</p>
+            </div>
+
+            <button>
+                <i class="fa-brands fa-twitter"></i>
+           Start Trial with Twitter
+            </button>
+        </div>
+    </div> 
+
+    <footer>
+        <h3>Chirp.</h3>
+        <div>
+            <i class="fa-brands fa-twitter"></i>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of use</a>
+        </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

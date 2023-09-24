@@ -1,0 +1,1631 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    background-color: rgb(254, 248, 252);
+}
+nav{
+    display: flex;
+    padding: 1.6vw 8vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .hiddenDiv{
+    display: none;
+}
+
+nav h3{
+    margin-right: 15vw;
+    font-style: italic;
+    font-size: 25px;
+    color: blue;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav .arrowBtn{
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: rgb(82, 83, 83);
+    margin-right: -10vw;
+}
+
+nav>.signInBtn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4vw;
+    padding: 15px;
+    background-color: rgb(74, 150, 205);
+    color: white;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: .4em;
+    border-radius: 7px;
+}
+
+
+
+.signInBtn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding: 15px;
+    background-color: rgb(74, 150, 205);
+    color: white;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: .4em;
+    border-radius: 7px;
+}
+
+
+.twitterAnalytics {
+    display: flex;
+    gap: 6%;
+    padding: 1.6vw 8vw;
+   
+}
+
+.twitterAnalytics .twitterDesc{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    flex-basis: 95%;
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs{
+    display: flex;
+    position: relative;
+    background-color: transparent;
+    height: 4em;
+    
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    border: 3px solid white;
+
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(1){
+    left: 0px;
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(2){
+    left: 40px;
+
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(3){
+    left: 80px;
+
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(4){
+    left: 120px;
+
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(5){
+    left: 160px;
+
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(6){
+    left: 200px;
+
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(7){
+    left: 240px;
+
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(8){
+    left: 280px;
+
+}
+
+.twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(9){
+    left: 320px;
+}
+
+.twitterAnalytics .twitterDesc h1{
+    font-size: 4em;
+}
+
+.twitterAnalytics .twitterDesc p{
+    font-size: 1.5em;
+    color: rgb(82, 83, 83);
+}
+
+.twitterAnalytics .twitterDesc .joinParagraph span{
+    color: rgb(33, 133, 205);
+    font-weight: bold;
+}
+
+.twitterAnalytics .twitterDesc .learnMore{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    color: rgb(33, 133, 205);
+}
+
+
+
+.twitterAnalytics .graphAnalytics{
+    width: 70%;
+    background-color: rgb(208, 249, 249);
+    display: flex;
+    flex-direction: column;
+    padding: 1.8em 1.8em 4em;
+    gap: 30px;
+    border-radius: 10px;
+
+}
+
+
+
+.twitterAnalytics .graphAnalytics .graphContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.8em 1.8em 4em;
+    border-radius: 10px;
+    gap: 2em;
+
+}
+
+.twitterAnalytics .graphAnalytics .graphContainer .chart{
+    width: 30vw;
+    height: 500px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.twitterAnalytics .graphAnalytics .graphContainer .otherData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twitterAnalytics .graphAnalytics .graphContainer .otherData div{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.twitterAnalytics .graphAnalytics .graphContainer .otherData h4{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+
+}
+
+.twitterAnalytics .graphAnalytics .graphContainer .otherData h4 span {
+    font-weight: normal;
+    color: rgb(93, 93, 93);
+}
+
+.twitterAnalytics .graphAnalytics .graphContainer .otherData button {
+    display: flex;
+    align-items: center;
+    width: 24%;
+    padding: 16px 12px;
+    gap: 1.1em;
+    background-color: white;
+    font-size: 1.2em;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.twitterAnalytics .graphAnalytics .graphContainer .otherData img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.twitterAnalytics .graphAnalytics .impressions{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1.6em;
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: 1.2em;
+}
+
+.twitterAnalytics .graphAnalytics .impressions h4{
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitterAnalytics .graphAnalytics .impressions p{
+    color: rgb(93, 93, 93);
+    
+}
+
+.twitterAnalytics .graphAnalytics .engagement{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:1.6em;
+    border-radius: 10px;
+    line-height: 25px;
+    font-size: 1.2em;
+
+
+}
+
+.twitterAnalytics .graphAnalytics .engagement h4{
+    display: flex;
+}
+
+.twitterAnalytics .graphAnalytics .engagement p{
+    color: rgb(93, 93, 93);
+
+}
+
+.featuresContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1.6vw 8vw;
+
+}
+
+.featuresContainer h2{
+    margin: 10px 100px;
+    font-size: 3em;
+}
+
+.featuresContainer .featuresDiv{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.featuresContainer .featuresDiv .featureBox{
+    display: flex;
+    border: 2px solid rgb(196, 196, 196);
+    border-radius: 7px;
+    flex-direction: column;
+    flex-basis: 45%;
+    margin-bottom: 3%;
+    padding: 30px;
+    font-size: 1.5em;
+    gap: 0.5em;
+    
+}
+
+.featuresContainer .featuresDiv .featureBox p{
+    color: rgb(93, 93, 93);
+}
+
+.featuresContainer .featuresDiv .featureBox img{
+    width: 60px;
+    height: 60px;
+}
+
+.ourCustomers{
+    background-color: rgb(208, 249, 249);
+    padding: 4vw 8vw;
+
+}
+
+.ourCustomers h1{
+    font-size: 3em;
+    margin-bottom: 50px;
+}
+
+.ourCustomers .customersDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ourCustomers .customersDiv .customer{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    background-color: white;
+    gap: 2em;
+    padding: 25px;
+    border-radius: 5px;
+
+}
+
+
+.ourCustomers .customersDiv .customer p{
+    color: rgb(93, 93, 93);
+    font-size: 1.3em;
+    
+}
+
+.ourCustomers .customersDiv .customer p:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.ourCustomers .customersDiv .customer p:nth-child(3) span{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.ourCustomers .customersDiv .customer p:nth-child(3) i{
+    color: red;
+    font-size: 1.3em;
+    font-weight: lighter;
+}
+
+.ourCustomers .customersDiv .customer .custMetaData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ourCustomers .customersDiv .customer .custMetaData i{
+    color: rgb(74, 150, 205);
+    font-size: 1.5em;
+}
+
+.ourCustomers .customersDiv .customer .custMetaData div{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.4em;
+    align-items: center;
+}
+
+.ourCustomers .customersDiv .customer .custMetaData div h4{
+    display: flex;
+    flex-direction: column;
+}
+
+.ourCustomers .customersDiv .customer .custMetaData div h4 span{
+    color: rgb(93, 93, 93);
+    font-weight: lighter;
+}
+
+
+
+.ourCustomers .customersDiv .customer .custMetaData div img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+
+
+.pricePlan{
+    display: flex;
+    flex-direction: column;
+    margin: 6% auto;
+    width: 40vw;
+    gap: 2em;
+}
+
+.pricePlan>h2, .pricePlan>p{
+    text-align: center
+}
+
+.pricePlan>h2{
+    font-size: 2.7em;
+}
+
+.pricePlan>p{
+    font-size: 1.4em;
+    color: rgb(93, 93, 93);
+
+}
+
+.pricePlan .actualPrice{
+    display: flex;
+    flex-direction: column;
+    border: 1.7px solid orange !important;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: rgb(255, 240, 250);
+    margin: 40px 0 0;
+
+}
+
+
+.pricePlan .actualPrice>p{
+    color: rgb(93, 93, 93);
+    font-size: 1.4em;
+}
+
+.pricePlan .actualPrice>h1 span{
+    font-size: .5em;
+    font-weight: lighter;
+    color: rgb(93, 93, 93);
+
+}
+
+.pricePlan .actualPrice>h1{
+    font-size: 3em;
+}
+
+.pricePlan .actualPrice div{
+    display: flex;
+    flex-direction: column;
+    gap: .9em;
+    font-size: 1.2em;
+    margin: 30px 0;
+    border-bottom: 2px solid rgb(190, 190, 190);
+    border-top: 2px solid rgb(190, 190, 190);
+    padding: 25px 0;
+}
+
+.pricePlan .actualPrice div p{
+    color: rgb(93, 93, 93);
+}
+
+
+.pricePlan .actualPrice div p i{
+    border-radius: 100%;
+    background-color: rgb(16, 198, 156);
+    color: white;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.pricePlan .actualPrice button {
+    font-size: 1em;
+    padding: 20px;
+    letter-spacing: .9px;
+    font-weight: bold;
+    background-color: rgb(74, 150, 205);
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.pricePlan .actualPrice button i{
+    margin-right: .3em;
+    font-size: 1.2em;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 130px;
+    background-color: rgb(208, 249, 249);
+    
+}
+
+footer h3{
+    color: blue;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    font-size: 1.2em;
+    color: black !important;
+}
+
+footer div a{
+    text-decoration: none;
+    color: black !important;
+
+}
+
+
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        padding: 30px 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 60vw;
+    }
+    
+    nav h3{
+        margin-right: 0;
+        font-style: italic;
+        font-size: 25px;
+        color: blue;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    nav .arrowBtn{
+        display: block;
+        background-color: white;
+        border: none;
+        font-size: 30px;
+    }
+    
+    nav>ul{
+        display: none;
+        list-style: none;
+        gap: 0%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        color: rgb(82, 83, 83);
+    }
+
+    nav>.signInBtn{
+        display: none;
+    }
+    
+    .twitterAnalytics {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2em;
+        padding: 10px;
+        overflow: auto;
+    }
+    
+    
+    
+    .twitterAnalytics .graphAnalytics{
+        margin-left: 0;
+        background-color: rgb(208, 249, 249);
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        width: 90vw;
+        
+    }
+    
+    
+    
+    .twitterAnalytics .graphAnalytics .graphContainer{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 2em;
+        border-radius: 10px;
+        
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .chart{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData div{
+        display: flex;
+        gap: 1.5em;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData h4{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+    
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData h4 span {
+        font-weight: normal;
+        color: rgb(93, 93, 93);
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData button {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        padding: 16px 12px;
+        gap: 1.1em;
+        background-color: white;
+        font-size: 1.2em;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData img{
+        width: 13vw;
+        height: 13vw;
+        border-radius: 100%;
+    }
+    
+    .twitterAnalytics .graphAnalytics .impressions{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 1.6em;
+        border-radius: 10px;
+        line-height: 25px;
+        font-size: 1.2em;
+        overflow-wrap: break-word;
+        
+    }
+    
+    .twitterAnalytics .graphAnalytics .impressions h4{
+        display: block;
+
+    }   
+
+    .twitterAnalytics .graphAnalytics .impressions h4 span{
+        margin-left: 40vw;
+    }
+    
+    .twitterAnalytics .graphAnalytics .impressions p{
+        color: rgb(93, 93, 93);
+    }
+    
+    .twitterAnalytics .graphAnalytics .engagement{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding:1.6em;
+        border-radius: 10px;
+        line-height: 25px;
+        font-size: 1.2em;
+        overflow-wrap: break-word;
+
+    }
+
+    .twitterAnalytics .graphAnalytics .engagement h4{
+        display: block;
+    }
+
+    .twitterAnalytics .graphAnalytics .engagement h4 span{
+        margin-left: 35vw;
+    }
+    
+    .twitterAnalytics .graphAnalytics .engagement p{
+        color: rgb(93, 93, 93);
+        
+    }
+    .twitterAnalytics .twitterDesc{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 90vw;
+        margin: 0 auto;
+        flex-basis: 95%;
+        overflow-wrap: break-word;
+    }
+
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs{
+        display: flex;
+        position: relative;
+        background-color: transparent;
+        height: 4em;
+        
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img{
+        width: 13vw;
+        height: 13vw;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        border: 3px solid white;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(1){
+        left: 0px;
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(2){
+        left: 10vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(3){
+        left: 20vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(4){
+        left: 30vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(5){
+        left: 40vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(6){
+        left: 50vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(7){
+        left: 60vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(8){
+        left: 70vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(9){
+        left: 80vw;
+    }
+    
+    .twitterAnalytics .twitterDesc h1{
+        font-size: 4em;
+    }
+    
+    .twitterAnalytics .twitterDesc p{
+        font-size: 1.5em;
+        color: rgb(82, 83, 83);
+    }
+    
+    .twitterAnalytics .twitterDesc .joinParagraph span{
+        color: rgb(33, 133, 205);
+        font-weight: bold;
+    }
+    
+    .twitterAnalytics .twitterDesc .learnMore{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+        color: rgb(33, 133, 205);
+    }
+    
+    .twitterAnalytics .twitterDesc .learnMore h3{
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    .twitterAnalytics .twitterDesc .learnMore .signInBtn{
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        background-color: rgb(74, 150, 205);
+        color: white;
+        border: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.1em;
+        border-radius: 7px;
+        width: 80vw;
+    }
+
+    
+    .featuresContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        gap: 3em;
+    
+    }
+    
+    .featuresContainer h2{
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .featuresContainer .featuresDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .featuresContainer .featuresDiv .featureBox{
+        display: flex;
+        border: 2px solid rgb(196, 196, 196);
+        border-radius: 7px;
+        flex-direction: column;
+        margin-bottom: 0%;
+        padding: 30px;
+        font-size: 1.5em;
+        gap: 1em;
+        
+    }
+    
+    .featuresContainer .featuresDiv .featureBox p{
+        color: rgb(93, 93, 93);
+    }
+    
+    .featuresContainer .featuresDiv .featureBox img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .ourCustomers{
+        background-color: rgb(208, 249, 249);
+        padding: 80px 30px;
+    
+    }
+    
+    .ourCustomers h1{
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+    
+    .ourCustomers .customersDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+    
+    .ourCustomers .customersDiv .customer{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        background-color: white;
+        gap: 2em;
+        padding: 25px;
+        border-radius: 10px ;
+    
+    }
+    
+    
+    .ourCustomers .customersDiv .customer p{
+        color: rgb(93, 93, 93);
+        font-size: 1.3em;
+        
+    }
+    
+    .ourCustomers .customersDiv .customer p:nth-child(3){
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .ourCustomers .customersDiv .customer p:nth-child(3) span{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    
+    .ourCustomers .customersDiv .customer p:nth-child(3) i{
+        color: red;
+        font-size: 1.3em;
+        font-weight: lighter;
+    }
+    
+    .ourCustomers .customersDiv .customer .custMetaData{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    
+    .pricePlan{
+        display: flex;
+        flex-direction: column;
+        margin: 6% auto;
+        width: 90%;
+        gap: 2em;
+    }
+    
+    .pricePlan>h2, .pricePlan>p{
+        text-align: center
+    }
+    
+    .pricePlan>h2{
+        font-size: 2.7em;
+    }
+    
+    .pricePlan>p{
+        font-size: 1.4em;
+        color: rgb(93, 93, 93);
+    
+    }
+    
+    .pricePlan .actualPrice{
+        display: flex;
+        flex-direction: column;
+        border: 1.7px solid orange !important;
+        padding: 40px;
+        border-radius: 10px;
+        background-color: rgb(255, 240, 250);
+        margin: 40px 0 0;
+        gap: 1.2em;
+    
+    }
+    
+    
+    .pricePlan .actualPrice>p{
+        color: rgb(93, 93, 93);
+        font-size: 2em;
+       
+    }
+    
+    .pricePlan .actualPrice>h1 span{
+        font-size: .7em;
+        font-weight: lighter;
+        color: rgb(93, 93, 93);
+    
+    }
+    
+    .pricePlan .actualPrice>h1{
+        font-size: 3em;
+    }
+    
+    .pricePlan .actualPrice div{
+        display: flex;
+        flex-direction: column;
+        gap: .9em;
+        font-size: 1.2em;
+        margin: 30px 0;
+        border-bottom: 2px solid rgb(190, 190, 190);
+        border-top: 2px solid rgb(190, 190, 190);
+        padding: 25px 0;
+    }
+    
+    .pricePlan .actualPrice button {
+        font-size: 1em;
+        padding: 20px;
+        letter-spacing: .9px;
+        font-weight: bold;
+        background-color: rgb(74, 150, 205);
+        border: none;
+        color: white;
+    }
+    
+    .pricePlan .actualPrice button i{
+        margin-right: .3em;
+        font-size: 1.2em;
+        
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        flex-wrap: wrap;
+        background-color: rgb(208, 249, 249);
+        
+    }
+    
+    footer h3{
+        color: blue;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        letter-spacing: 1px;
+        line-height: 40px;
+        flex-basis: 15%;
+    }
+    
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 3.5vw;
+        flex-basis: 90%;
+        color: black;
+        overflow-wrap: break-word;
+        overflow: auto;
+    }
+
+ 
+    
+    footer div a{
+        text-decoration: none;
+        color: black !important;
+    }
+    
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav{
+        display: flex;
+        padding: 40px 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav .hiddenDiv{
+        display: none;
+    }
+    
+    nav h3{
+        margin-right: 0px;
+        font-style: italic;
+        font-size: 25px;
+        color: blue;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    nav .arrowBtn{
+        display: none;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 30%;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.6vw;
+        color: rgb(82, 83, 83);
+    }
+    
+    .signInBtn{
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.3vw;
+        padding: 15px;
+        background-color: rgb(74, 150, 205);
+        color: white;
+        border: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: .4em;
+        border-radius: 7px;
+    }
+    
+    
+    .twitterAnalytics {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2em;
+        padding: 10px;
+        overflow: auto;
+    }
+    
+    
+    
+    .twitterAnalytics .graphAnalytics{
+        margin-left: 0px;
+        background-color: rgb(208, 249, 249);
+        display: flex;
+        flex-direction: row;
+        border-radius: 10px;
+        width: 95vw;
+        margin: 0 auto;
+        overflow-wrap: break-word;
+        overflow: auto;
+    }
+
+    
+    
+    
+    .twitterAnalytics .graphAnalytics .graphContainer{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        gap: 2em;
+        border-radius: 10px;
+        flex-basis: 60vw;
+        border: 2px solid black;
+        height: 80vh;
+        
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .chart{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData{
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData div{
+        display: flex;
+        gap: 1.5em;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData h4{
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+    
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData h4 span {
+        font-weight: normal;
+        color: rgb(93, 93, 93);
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData button {
+        display: flex;
+        align-items: center;
+        width: 100px;
+        padding: 16px 12px;
+        gap: 1.1em;
+        background-color: white;
+        font-size: 1.2em;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+    
+    .twitterAnalytics .graphAnalytics .graphContainer .otherData img{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 100%;
+    }
+    
+    .twitterAnalytics .graphAnalytics .impressions{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 1.6em;
+        border-radius: 10px;
+        line-height: 25px;
+        font-size: 1.4em;
+        overflow-wrap: break-word;
+        width: 30vw;
+        
+    }
+    
+    .twitterAnalytics .graphAnalytics .impressions h4{
+        display: flex;
+        flex-direction: column-reverse;
+    }   
+
+   
+    
+    .twitterAnalytics .graphAnalytics .impressions p{
+        color: rgb(93, 93, 93);
+    }
+    
+    .twitterAnalytics .graphAnalytics .engagement{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding:1.6em;
+        border-radius: 10px;
+        line-height: 25px;
+        font-size: 1.4em;
+        overflow-wrap: break-word;
+        width: 30vw;
+
+    }
+
+    .twitterAnalytics .graphAnalytics .engagement h4{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    
+    .twitterAnalytics .graphAnalytics .engagement p{
+        color: rgb(93, 93, 93);
+        
+    }
+    .twitterAnalytics .twitterDesc{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 90vw;
+        margin: 0 auto;
+        flex-basis: 95%;
+        overflow-wrap: break-word;
+    }
+
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs{
+        display: flex;
+        position: relative;
+        background-color: transparent;
+        height: 4em;
+        
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img{
+        width: 13vw;
+        height: 13vw;
+        border-radius: 100%;
+        position: absolute;
+        top: 0;
+        border: 3px solid white;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(1){
+        left: 0px;
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(2){
+        left: 10vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(3){
+        left: 20vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(4){
+        left: 30vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(5){
+        left: 40vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(6){
+        left: 50vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(7){
+        left: 60vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(8){
+        left: 70vw;
+    
+    }
+    
+    .twitterAnalytics .twitterDesc .consecutiveImgs img:nth-child(9){
+        left: 80vw;
+    }
+    
+    .twitterAnalytics .twitterDesc h1{
+        font-size: 4em;
+    }
+    
+    .twitterAnalytics .twitterDesc p{
+        font-size: 1.5em;
+        color: rgb(82, 83, 83);
+        
+    }
+
+    .twitterAnalytics .twitterDesc p:last-child{
+        margin: 8vw 0 4vw;
+    }
+    
+    .twitterAnalytics .twitterDesc .joinParagraph span{
+        color: rgb(33, 133, 205);
+        font-weight: bold;
+    }
+    
+    .twitterAnalytics .twitterDesc .learnMore{
+        display: flex;
+        align-items: center;
+        gap: 2em;
+        color: rgb(33, 133, 205);
+    }
+    
+    .twitterAnalytics .twitterDesc .learnMore h3{
+        font-weight: bolder;
+        font-size: 1.5em;
+    }
+
+    .twitterAnalytics .twitterDesc .learnMore .signInBtn{
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        background-color: rgb(74, 150, 205);
+        color: white;
+        border: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.1em;
+        border-radius: 7px;
+        width: 45vw;
+    }
+
+    
+    .featuresContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 90px 30px;
+        gap: 3em;
+        background-color: white;
+    
+    }
+    
+    .featuresContainer h2{
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    .featuresContainer .featuresDiv{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    
+    .featuresContainer .featuresDiv .featureBox{
+        display: flex;
+        border: 2px solid rgb(196, 196, 196);
+        border-radius: 7px;
+        flex-direction: column;
+        margin-bottom: 0%;
+        padding: 30px;
+        font-size: 1.5em;
+        gap: 1em;
+        
+    }
+    
+    .featuresContainer .featuresDiv .featureBox p{
+        color: rgb(93, 93, 93);
+    }
+    
+    .featuresContainer .featuresDiv .featureBox img{
+        width: 60px;
+        height: 60px;
+    }
+    
+    .ourCustomers{
+        background-color: rgb(208, 249, 249);
+        padding: 80px 30px;
+    
+    }
+    
+    .ourCustomers h1{
+        font-size: 3em;
+        margin-bottom: 50px;
+    }
+    
+    .ourCustomers .customersDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3em;
+    }
+    
+    .ourCustomers .customersDiv .customer{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        background-color: white;
+        gap: 2em;
+        padding: 25px;
+        border-radius: 10px ;
+    
+    }
+    
+    
+    .ourCustomers .customersDiv .customer p{
+        color: rgb(93, 93, 93);
+        font-size: 1.3em;
+        
+    }
+    
+    .ourCustomers .customersDiv .customer p:nth-child(3){
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .ourCustomers .customersDiv .customer p:nth-child(3) span{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+    
+    .ourCustomers .customersDiv .customer p:nth-child(3) i{
+        color: red;
+        font-size: 1.3em;
+        font-weight: lighter;
+    }
+    
+    .ourCustomers .customersDiv .customer .custMetaData{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    
+    
+    .pricePlan{
+        display: flex;
+        flex-direction: column;
+        margin: 6% auto;
+        width: 90%;
+        gap: 2em;
+    }
+    
+    .pricePlan>h2, .pricePlan>p{
+        text-align: center
+    }
+    
+    .pricePlan>h2{
+        font-size: 2.7em;
+    }
+    
+    .pricePlan>p{
+        font-size: 1.4em;
+        color: rgb(93, 93, 93);
+    
+    }
+    
+    .pricePlan .actualPrice{
+        display: flex;
+        flex-direction: column;
+        border: 1.7px solid orange !important;
+        padding: 40px;
+        border-radius: 10px;
+        background-color: rgb(255, 240, 250);
+        margin: 40px 0 0;
+        gap: 1.2em;
+    
+    }
+    
+    
+    .pricePlan .actualPrice>p{
+        color: rgb(93, 93, 93);
+        font-size: 2em;
+       
+    }
+    
+    .pricePlan .actualPrice>h1 span{
+        font-size: .7em;
+        font-weight: lighter;
+        color: rgb(93, 93, 93);
+    
+    }
+    
+    .pricePlan .actualPrice>h1{
+        font-size: 3em;
+    }
+    
+    .pricePlan .actualPrice div{
+        display: flex;
+        flex-direction: column;
+        gap: .9em;
+        font-size: 1.2em;
+        margin: 30px 0;
+        border-bottom: 2px solid rgb(190, 190, 190);
+        border-top: 2px solid rgb(190, 190, 190);
+        padding: 25px 0;
+    }
+    
+    .pricePlan .actualPrice button {
+        font-size: 1em;
+        padding: 20px;
+        letter-spacing: .9px;
+        font-weight: bold;
+        background-color: rgb(74, 150, 205);
+        border: none;
+        color: white;
+    }
+    
+    .pricePlan .actualPrice button i{
+        margin-right: .3em;
+        font-size: 1.2em;
+        
+    }
+    
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        flex-wrap: wrap;
+        background-color: rgb(208, 249, 249);
+        
+    }
+    
+    footer h3{
+        color: blue;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        letter-spacing: 1px;
+        line-height: 40px;
+        flex-basis: 15%;
+    }
+    
+    footer div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 3.5vw;
+        flex-basis: 90%;
+        color: black;
+        overflow-wrap: break-word;
+        overflow: auto;
+    }
+
+ 
+    
+    footer div a{
+        text-decoration: none;
+        color: black !important;
+    }
+    
+}
+
+
+
+@media (min-width: 992px){
+    nav{
+        display: flex;
+        padding: 1.6vw 8vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    nav .hiddenDiv{
+        display: none;
+    }
+    
+    nav h3{
+        margin-right: 15vw;
+        font-style: italic;
+        font-size: 25px;
+        color: blue;
+        font-weight: bold;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    nav .arrowBtn{
+        display: none;
+    }
+    
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 4vw;
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        color: rgb(82, 83, 83);
+        margin-right: -10vw;
+    }
+    
+    nav>.signInBtn{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.4vw;
+        padding: 15px;
+        background-color: rgb(74, 150, 205);
+        color: white;
+        border: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: .4em;
+        border-radius: 7px;
+    }
+    }
+    
