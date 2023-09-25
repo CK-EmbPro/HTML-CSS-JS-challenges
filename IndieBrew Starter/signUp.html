@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signUp.css">
+</head>
+<body>
+    <nav>
+        <img src="./Assets/Logo.svg" alt="no-logo">
+        <a href="#">
+            <img src="./Assets/Back Arrow.svg" alt="no-arrow">
+            Back to homepage
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="personalFeeds">
+            <h1>Create your personalised feed</h1>
+            <div class="pAndImg">
+                <img src="./Assets/icons/balloon.png">
+                <p><span>Over 20 resources</span>. With resources ranging from Reddit to IndieHackers, we've got all your needs covered.</p>
+            </div>
+
+            <div class="pAndImg">
+                <img src="./Assets/icons/papers.png">
+                <p><span>Delivered weekly.</span> Every week at exactly Tuesday 12:00 P.M. EST - expect a value-packed digest right in your email.</p>
+            </div>
+
+            <div class="pAndImg">
+                <img src="./Assets/icons/bulb.png">
+                <p><span>Unlimited ideas.</span> With all the ideas you'll be reading about, what's stopping you from creating a sustainable startup?</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <h3>Create your IndieBrew Account</h3>
+            <form>
+                <label for="email">Email</label>
+                <input id="email" type="text" placeholder="john@example.com">
+
+                <label for="names">Full name</label>
+                <input id="names" type="text" placeholder="John doe">
+                
+                <label for="pword">Password</label>
+                <input id="pword" type="text" placeholder="At least 8 characters">
+
+                <input id="terms" type="checkbox"/>
+                <label for="terms">
+                    By creating an account on IndieBrew, you agree to the <strong><a href="#">Terms & conditions.</a></strong>
+                </label>
+
+                <button type="submit">Create an Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./signUp.js"></script>
+</body>
+</html>
+
+    
+    <!-- background-color: rgb(254, 248, 252); -->

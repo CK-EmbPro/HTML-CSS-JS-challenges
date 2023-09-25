@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-color: rgb(245, 234, 241);
+}
+
+nav{
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    padding: 1.6vw 6vw;
+}
+
+nav a{
+    display: flex;
+    align-items: center; 
+    gap: 1em;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+    font-weight: bold; 
+}
+
+nav a img{
+    border: 2px solid rgb(216, 216, 216);
+    padding: 0.5vw 0.6vw;
+    border-radius: 5px;
+    background-color: rgb(253, 242, 242);
+}
+
+.container{
+    display: flex;
+    padding: 1.6vw 6vw;
+    word-wrap: break-word;
+    gap: 10vw;
+    align-items: center;
+}
+
+.container .personalFeeds{
+    display: flex;
+    flex-direction: column;
+    gap: 2.7em;
+    width: 40vw;
+}
+
+.container .personalFeeds h1{
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+.container .personalFeeds .pAndImg{
+    display: flex;
+    align-items: center;
+    overflow-wrap: break-word;
+}
+
+.container .personalFeeds p{
+    overflow-wrap: break-word;
+    font-size: 1.4em;
+}
+
+.container .personalFeeds p span{
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: 1em;
+
+}
+
+.container .personalFeeds p img{
+    width: 2vw;
+    height: 2vw;
+    margin-right: 0.5vw;
+}
+
+.container .form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    padding: 3.4vw 3vw 3vw;
+    gap: 1.4em;
+    border-radius: 7px;
+}
+
+.container .form h3{
+    font-size: 1.4em;
+    letter-spacing: 1px;
+}
+
+.container .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.container .form form label:not(:last-child){
+    font-weight: bold;
+    letter-spacing: 0.8px;
+}
+
+.container .form form input:not([type='checkbox']){
+    padding: 1vw;
+    margin-bottom: 1.3em;
+    border-radius: 7px;
+    border: 1.7px solid rgb(176, 176, 176);
+    outline: none;
+}
+
+
+.container .form form input[type="checkbox"] {
+    display: none !important;
+  }
+  
+.container .form form input[type="checkbox"]+label{
+    display: flex;
+    align-items: right;
+    flex-wrap: wrap;
+  }
+
+.container .form form input[type="checkbox"]+label strong a{
+    line-height: 4px;
+}
+
+  
+.container .form form input[type="checkbox"]+label::before {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 1px solid grey;
+    margin: 0 10px 0 0;
+    margin-bottom: 6px;
+  }
+  
+.container .form form input[type="checkbox"]:checked+label::before {
+    content: "✔";
+    color: black;
+    display: grid;
+    place-content: center;
+  }
+
+
+.container .form form button{
+    padding: 14px;
+    font-size: 1.2em;
+    letter-spacing: 0.8px;
+    font-weight: bold;
+    margin-top: 30px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+@media (max-width: 767px) {
+    nav{
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+        padding: 1.6vw 6vw;
+    }
+    
+    nav a{
+        display: flex;
+        align-items: center; 
+        gap: 1em;
+        font-size: 1.2em;
+        text-decoration: none;
+        color: black;
+        font-weight: bold; 
+    }
+    
+    nav a img{
+        border: 2px solid rgb(216, 216, 216);
+        padding: 0.5vw 0.6vw;
+        border-radius: 5px;
+        background-color: rgb(253, 242, 242);
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 1.6vw 6vw;
+        word-wrap: break-word;
+        gap: 10vw;
+        align-items: center;
+    }
+    
+    .container .personalFeeds{
+        display: flex;
+        flex-direction: column;
+        gap: 2.7em;
+        width: 88vw;
+    }
+    
+    .container .personalFeeds h1{
+        font-size: 2.5em;
+        letter-spacing: 1px;
+    }
+    
+    .container .personalFeeds .pAndImg{
+        display: flex;
+        align-items: center;
+        overflow-wrap: break-word;
+    }
+    
+    .container .personalFeeds p{
+        overflow-wrap: break-word;
+        font-size: 1.4em;
+    }
+    
+    .container .personalFeeds p span{
+        font-weight: bold;
+        white-space: nowrap;
+        font-size: 1em;
+    
+    }
+    
+    .container .personalFeeds p img{
+        width: 2vw;
+        height: 2vw;
+        margin-right: 0.5vw;
+    }
+    
+    .container .form{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 88vw;
+        padding: 3.4vw 3vw 3vw;
+        gap: 1.4em;
+        border-radius: 7px;
+    }
+    
+    .container .form h3{
+        font-size: 1.4em;
+        letter-spacing: 1px;
+    }
+    
+    .container .form form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .container .form form label:not(:last-child){
+        font-weight: bold;
+        letter-spacing: 0.8px;
+    }
+    
+    .container .form form input:not([type='checkbox']){
+        padding: 15px;
+        margin-bottom: 1.3em;
+        border-radius: 7px;
+        border: 1.7px solid rgb(176, 176, 176);
+        outline: none;
+    }
+    
+    
+    .container .form form input[type="checkbox"] {
+        display: none !important;
+      }
+      
+    .container .form form input[type="checkbox"]+label{
+        display: flex;
+        align-items: right;
+        flex-wrap: wrap;
+      }
+    
+    .container .form form input[type="checkbox"]+label strong a{
+        line-height: 4px;
+    }
+    
+      
+    .container .form form input[type="checkbox"]+label::before {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 22px;
+        border: 1px solid grey;
+        margin: 0 10px 0 0;
+        margin-bottom: 6px;
+        border-radius: 7px;
+      }
+      
+    .container .form form input[type="checkbox"]:checked+label::before {
+        content: "✔";
+        color: black;
+        display: grid;
+        place-content: center;
+      }
+    
+    
+    .container .form form button{
+        padding: 14px;
+        font-size: 1.2em;
+        letter-spacing: 0.8px;
+        font-weight: bold;
+        margin-top: 30px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 7px;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    nav{ 
+        display: flex;
+        align-items: center;    
+        justify-content: space-between;
+        padding: 1.6vw 6vw;
+    }
+    
+    nav a{
+        display: flex;
+        align-items: center; 
+        gap: 1em;
+        font-size: 1.2em;
+        text-decoration: none;
+        color: black;
+        font-weight: bold; 
+    }
+    
+    nav a img{
+        border: 2px solid rgb(216, 216, 216);
+        padding: 0.5vw 0.6vw;
+        border-radius: 5px;
+        background-color: rgb(253, 242, 242);
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding: 1.6vw 6vw;
+        word-wrap: break-word;
+        gap: 10vw;
+        align-items: center;
+    }
+    
+    .container .personalFeeds{
+        display: flex;
+        flex-direction: column;
+        gap: 2.7em;
+        width: 88vw;
+    }
+    
+    .container .personalFeeds h1{
+        font-size: 2.5em;
+        letter-spacing: 1px;
+    }
+    
+    .container .personalFeeds .pAndImg{
+        display: flex;
+        align-items: center;
+        overflow-wrap: break-word;
+    }
+    
+    .container .personalFeeds p{
+        overflow-wrap: break-word;
+        font-size: 1.4em;
+    }
+    
+    .container .personalFeeds p span{
+        font-weight: bold;
+        white-space: nowrap;
+        font-size: 1em;
+    
+    }
+    
+    .container .personalFeeds p img{
+        width: 2vw;
+        height: 2vw;
+        margin-right: 0.5vw;
+    }
+    
+    .container .form{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 88vw;
+        padding: 3.4vw 3vw 3vw;
+        gap: 1.4em;
+        border-radius: 7px;
+    }
+    
+    .container .form h3{
+        font-size: 1.4em;
+        letter-spacing: 1px;
+    }
+    
+    .container .form form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.4em;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .container .form form label:not(:last-child){
+        font-weight: bold;
+        letter-spacing: 0.8px;
+    }
+    
+    .container .form form input:not([type='checkbox']){
+        padding: 3vw;
+        margin-bottom: 1.3em;
+        border-radius: 7px;
+        border: 1.7px solid rgb(176, 176, 176);
+        outline: none;
+    }
+    
+    
+    .container .form form input[type="checkbox"] {
+        display: none !important;
+      }
+      
+    .container .form form input[type="checkbox"]+label{
+        display: flex;
+        align-items: right;
+        flex-wrap: wrap;
+      }
+    
+    .container .form form input[type="checkbox"]+label strong a{
+        line-height: 4px;
+    }
+    
+      
+    .container .form form input[type="checkbox"]+label::before {
+        content: "";
+        display: block;
+        width: 22px;
+        height: 22px;
+        border: 1px solid grey;
+        margin: 0 10px 0 0;
+        margin-bottom: 6px;
+        border-radius: 7px;
+      }
+      
+    .container .form form input[type="checkbox"]:checked+label::before {
+        content: "✔";
+        color: black;
+        display: grid;
+        place-content: center;
+      }
+    
+    
+    .container .form form button{
+        padding: 14px;
+        font-size: 1.2em;
+        letter-spacing: 0.8px;
+        font-weight: bold;
+        margin-top: 30px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 7px;
+    }
+}
+

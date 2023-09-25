@@ -18,7 +18,6 @@ const h4 = engagement.querySelector('h4')
 let h4Text = h4.childNodes[0]
 
 
-
 let isVisible = false
 arrowBtn.addEventListener('click', ()=>{
     if(!isVisible){
