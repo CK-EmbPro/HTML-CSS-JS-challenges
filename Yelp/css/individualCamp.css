@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 3vw 7vw;
+    align-items: center;
+    gap: 2vw;
+    /* border: 2px solid black; */
+}
+
+nav .hiddenDiv{
+    display: none;
+}
+
+nav .arrowBtn{
+    display: none;
+}
+
+nav .navDiv{
+    display: flex;
+    align-items: center;
+    gap: 55vw;
+    color: rgb(63, 63, 63);
+    /* border: 2px solid black; */
+
+}
+
+nav .navDiv h1 a{
+    color: black !important;
+    text-decoration: none;
+}
+
+nav .navDiv ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2em; 
+}
+
+nav .navDiv ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav .navDiv button{
+    padding: 13px 20px;
+    background-color: black;
+    border: none !important;
+    color: white;
+    border-radius: 7px;
+}
+
+nav .navDiv button a {
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+    padding:3vw 7vw;
+    gap: 3em;
+
+}
+
+.container .mapContainer{
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 7px;
+    height: 33em;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    padding: 3em;
+}
+
+.container .mapContainer img{
+    width: 100%;
+}
+
+.container .secondContainer{
+    /* border: 2px solid black; */
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+.container .secondContainer .mountUlap{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+    border: 2px solid black;
+    padding: 3em;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 7px;
+    overflow: hidden;
+
+}
+
+.container .secondContainer .mountUlap .mountLapText{
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+}
+
+.container .secondContainer .mountUlap .mountLapText h1{
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .secondContainer .mountUlap .mountLapText p{
+    color: rgb(92, 92, 92);
+}
+
+.container .secondContainer .mountUlap .mountLapText h1 span{
+    font-weight: lighter;
+}
+
+.container .secondContainer .mountUlap img{
+    border-radius: 7px;
+}
+
+
+.container .secondContainer .leavePreview{
+    padding: 1em 3em 3em;
+    display: flex;
+    flex-direction: column;
+    /* gap: 3em; */
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 7px;
+    justify-content: right;
+}
+
+.container .secondContainer .leavePreview div{
+    border-bottom: 1px solid rgb(218, 218, 218);
+    padding: 2em 0px;
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+}
+
+.container .secondContainer .leavePreview div h1{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container .secondContainer .leavePreview div h1 span{
+    font-weight: lighter;
+    color: rgb(92, 92, 92);
+}
+
+.container .secondContainer .leavePreview div p{
+    color: rgb(92, 92, 92);
+}
+
+
+.container .secondContainer .leavePreview  button{
+    background-color: black;
+    border: none !important;
+    color: white;
+    font-weight: bold;
+    width: 12em;
+    padding: 10px;
+    margin: 1.2em 0 1.2em 30em;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4em;
+}
+
+.container .secondContainer .leavePreview  button a{
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    padding:3vw 7vw;
+}
+
+
+
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        padding: 7vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .hiddenDiv{
+        display: none;
+        position: absolute;
+        background-color: rgb(99, 99, 99);
+        flex-direction: column;
+        width: 15em;
+        height:auto !important;
+        padding: 1em;
+        top: 13vw;
+        left: 66vw;
+        align-items: center;
+        gap: 1.4em;
+        border-radius: 7px;
+    }
+
+    nav .hiddenDiv ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-weight: bold;
+        /* border: 2px solid red; */
+        gap: 1.4em;
+        align-items: center;
+    }
+
+    nav .hiddenDiv ul button{
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 7px;
+    }
+
+    nav .arrowBtn{
+        display: block;
+        background: transparent;
+        border: none;
+    }
+
+    nav .arrowBtn i{
+        font-size: 1.7em;
+    }
+    
+    nav .navDiv{
+        display: none;
+        align-items: center;
+        gap: 60vw;
+        color: rgb(63, 63, 63);
+    
+    }
+    
+    nav .navDiv ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 2em;
+       
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding:3vw 7vw;
+        gap: 3em;
+    
+    }
+    
+    .container .mapContainer{
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 7px;
+        height: 33em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 3em;
+    }
+    
+    .container .mapContainer img{
+        width: 100%;
+    }
+    
+    .container .secondContainer{
+        /* border: 2px solid black; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .container .secondContainer .mountUlap{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        border: 2px solid black;
+        padding: 3em;
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 7px;
+    
+    }
+    
+    .container .secondContainer .mountUlap .mountLapText{
+        display: flex;
+        flex-direction: column;
+        gap: .7em;
+    }
+    
+    .container .secondContainer .mountUlap .mountLapText h1{
+        display: flex;
+        font-size: 1.5em;
+        justify-content: space-between;
+    }
+    
+    .container .secondContainer .mountUlap .mountLapText p{
+        color: rgb(92, 92, 92);
+    }
+    
+    .container .secondContainer .mountUlap .mountLapText h1 span{
+        font-weight: lighter;
+    }
+    
+    .container .secondContainer .mountUlap img{
+        border-radius: 7px;
+    }
+    
+    
+    .container .secondContainer .leavePreview{
+        padding: 1em 3em 3em;
+        display: flex;
+        flex-direction: column;
+        /* gap: 3em; */
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 7px;
+        align-items: flex-end;
+        justify-content: right;
+    
+    }
+    
+    .container .secondContainer .leavePreview div{
+        border-bottom: 1px solid rgb(218, 218, 218);
+        padding: 2em 0px;
+        display: flex;
+        flex-direction: column;
+        gap: .7em;
+    }
+    
+    .container .secondContainer .leavePreview div h1{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    .container .secondContainer .leavePreview div h1 span{
+        font-weight: lighter;
+        color: rgb(92, 92, 92);
+    }
+    
+    .container .secondContainer .leavePreview div p{
+        color: rgb(92, 92, 92);
+    }
+    
+    
+    .container .secondContainer .leavePreview  button{
+        background-color: black;
+        border: none !important;
+        color: white;
+        font-weight: bold;
+        width: 12em;
+        padding: 10px;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .4em;
+        margin-top: 1.3em;
+        
+    }
+    
+    
+    footer{
+        padding:3vw 7vw;      
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    nav{
+        display: flex;
+        padding: 7vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .hiddenDiv{
+        display: none;
+        position: absolute;
+        background-color: rgb(99, 99, 99);
+        flex-direction: column;
+        width: 15em;
+        height:auto !important;
+        padding: 1em;
+        top: 12vw;
+        left: 69vw;
+        align-items: center;
+        gap: 1.4em;
+        border-radius: 7px;
+    }
+
+    nav .hiddenDiv ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-weight: bold;
+        /* border: 2px solid red; */
+        gap: 1.4em;
+        align-items: center;
+    }
+
+    nav .hiddenDiv ul button{
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 7px;
+    }
+
+    nav .arrowBtn{
+        display: block;
+        background: transparent;
+        border: none;
+    }
+
+    nav .arrowBtn i{
+        font-size: 1.7em;
+    }
+    
+    nav .navDiv{
+        display: none;
+        align-items: center;
+        gap: 60vw;
+        color: rgb(63, 63, 63);
+    
+    }
+    
+    nav .navDiv ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 2em;
+       
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding:3vw 7vw;
+        gap: 3em;
+    
+    }
+    
+    .container .mapContainer{
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 7px;
+        height: 33em;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 3em;
+    }
+    
+    .container .mapContainer img{
+        width: 100%;
+    }
+    
+    .container .secondContainer{
+        /* border: 2px solid black; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .container .secondContainer .mountUlap{
+        display: flex;
+        flex-direction: column;
+        gap: 1.2em;
+        border: 2px solid black;
+        padding: 3em;
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 7px;
+    
+    }
+    
+    .container .secondContainer .mountUlap .mountLapText{
+        display: flex;
+        flex-direction: column;
+        gap: .7em;
+    }
+    
+    .container .secondContainer .mountUlap .mountLapText h1{
+        display: flex;
+        font-size: 1.5em;
+        justify-content: space-between;
+    }
+    
+    .container .secondContainer .mountUlap .mountLapText p{
+        color: rgb(92, 92, 92);
+    }
+    
+    .container .secondContainer .mountUlap .mountLapText h1 span{
+        font-weight: lighter;
+    }
+    
+    .container .secondContainer .mountUlap img{
+        border-radius: 7px;
+    }
+    
+    
+    .container .secondContainer .leavePreview{
+        padding: 1em 3em 3em;
+        display: flex;
+        flex-direction: column;
+        /* gap: 3em; */
+        border: 1px solid rgb(218, 218, 218);
+        border-radius: 7px;
+        align-items: flex-end;
+        justify-content: right;
+    
+    }
+    
+    .container .secondContainer .leavePreview div{
+        border-bottom: 1px solid rgb(218, 218, 218);
+        padding: 2em 0px;
+        display: flex;
+        flex-direction: column;
+        gap: .7em;
+    }
+    
+    .container .secondContainer .leavePreview div h1{
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    
+    .container .secondContainer .leavePreview div h1 span{
+        font-weight: lighter;
+        color: rgb(92, 92, 92);
+    }
+    
+    .container .secondContainer .leavePreview div p{
+        color: rgb(92, 92, 92);
+    }
+    
+    
+    .container .secondContainer .leavePreview  button{
+        background-color: black;
+        border: none !important;
+        color: white;
+        font-weight: bold;
+        width: 12em;
+        padding: 10px;
+        border-radius: 7px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .4em;
+        margin-top: 1.3em;
+        
+    }
+    
+    
+    footer{
+        padding:3vw 7vw;      
+    }
+    
+}

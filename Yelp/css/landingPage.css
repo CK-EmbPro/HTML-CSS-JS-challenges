@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: none;
+}
+
+.container{
+    display: flex;
+    gap: ;
+}
+
+.container .explore{
+    background-color: rgb(250, 246, 246);
+    display: flex;
+    flex-direction: column;
+    padding: 3vw 9vw;
+    gap: 2em;
+    width: 55vw;
+}
+
+.container .explore>img{
+    /* border: 2px solid black; */
+    width: 10em;
+    margin-bottom: 2em;
+}
+
+.container .explore .exploreBestCamps{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;    
+}
+
+.container .explore .exploreBestCamps h1{
+    font-size: 3.2em;
+}
+
+.container .explore .exploreBestCamps p{
+    font-size: 1.1em;
+    color: rgb(60, 60, 60);
+}
+
+.container .explore .exploreBestCamps div{
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+    /* margin: 30px 0; */
+    /* border-bottom: 2px solid rgb(190, 190, 190);
+    border-top: 2px solid rgb(190, 190, 190); */
+    /* padding: 25px 0; */
+}
+
+
+
+
+.container .explore .exploreBestCamps div p i{
+    border-radius: 100%;
+    background-color: rgb(16, 198, 156);
+    color: white;
+    padding: 10px;
+    margin-right: 15px;
+}
+
+
+.container .explore .exploreBestCamps button{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 12em;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+
+.container .explore .exploreBestCamps button a{
+    color: white;
+    text-decoration: none;
+}
+
+.container>img{
+    width: 45vw;
+    height: 100vh;
+}
+
+.container .explore .partenedWith{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container .explore .partenedWith p{
+    font-size: 1.1em;
+}
+
+@media (max-width: 768px){
+    
+    nav{
+        display: flex;
+        background-color: rgb(250, 246, 246);
+        padding: 4vw;
+
+    }
+    .container{
+        display: flex;
+        border: 2px solid black;
+        flex-direction: column-reverse;
+    }
+    
+    .container .explore{
+        background-color: rgb(250, 246, 246);
+        display: flex;
+        flex-direction: column;
+        padding: 3vw 7vw;
+        gap: 2em;
+        width: 100%;
+    }
+    
+    .container .explore>img{
+        /* border: 2px solid black; */
+       display: none;
+    }
+    
+    .container .explore .exploreBestCamps{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;    
+    }
+    
+    .container .explore .exploreBestCamps h1{
+        font-size: 3.2em;
+    }
+    
+    .container .explore .exploreBestCamps p{
+        font-size: 1.4em;
+        color: rgb(60, 60, 60);
+    }
+    
+    .container .explore .exploreBestCamps div{
+        display: flex;
+        flex-direction: column;
+        gap: .7em;
+        /* margin: 30px 0; */
+        /* border-bottom: 2px solid rgb(190, 190, 190);
+        border-top: 2px solid rgb(190, 190, 190); */
+        /* padding: 25px 0; */
+    }
+    
+    
+    
+    
+    .container .explore .exploreBestCamps div p i{
+        border-radius: 100%;
+        background-color: rgb(16, 198, 156);
+        color: white;
+        padding: 10px;
+        margin-right: 15px;
+    }
+    
+    
+    .container .explore .exploreBestCamps button{
+        background-color: black;
+        color: white;
+        border: none;
+        width: 12em;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 1.4em;
+        border-radius: 7px;
+    }
+
+    
+    
+    
+    .container>img{
+        width: 100%;
+        height: 80vh;
+    }
+    
+    .container .explore .partenedWith{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .container .explore .partenedWith p{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    
+    nav{
+        display: flex;
+        background-color: rgb(250, 246, 246);
+        padding: 4vw;
+
+    }
+    .container{
+        display: flex;
+        border: 2px solid black;
+        flex-direction: column-reverse;
+    }
+    
+    .container .explore{
+        background-color: rgb(250, 246, 246);
+        display: flex;
+        flex-direction: column;
+        padding: 3vw 7vw;
+        gap: 2em;
+        width: 100%;
+    }
+    
+    .container .explore>img{
+        /* border: 2px solid black; */
+       display: none;
+    }
+    
+    .container .explore .exploreBestCamps{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;    
+    }
+    
+    .container .explore .exploreBestCamps h1{
+        font-size: 3.2em;
+    }
+    
+    .container .explore .exploreBestCamps p{
+        font-size: 1.4em;
+        color: rgb(60, 60, 60);
+    }
+    
+    .container .explore .exploreBestCamps div{
+        display: flex;
+        flex-direction: column;
+        gap: .7em;
+        /* margin: 30px 0; */
+        /* border-bottom: 2px solid rgb(190, 190, 190);
+        border-top: 2px solid rgb(190, 190, 190); */
+        /* padding: 25px 0; */
+    }
+    
+    
+    
+    
+    .container .explore .exploreBestCamps div p i{
+        border-radius: 100%;
+        background-color: rgb(16, 198, 156);
+        color: white;
+        padding: 10px;
+        margin-right: 15px;
+    }
+    
+    
+    .container .explore .exploreBestCamps button{
+        background-color: black;
+        color: white;
+        border: none;
+        width: 12em;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 1.4em;
+        border-radius: 7px;
+    }
+    
+    
+    .container>img{
+        width: 100%;
+        height: 80vh;
+    }
+    
+    .container .explore .partenedWith{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .container .explore .partenedWith p{
+        font-size: 1.5em;
+    }
+}

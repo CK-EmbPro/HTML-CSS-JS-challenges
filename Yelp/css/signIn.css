@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main{
+    display: flex;
+}
+
+main .signUp{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2vw 10vw;
+    width: 70vw;
+}
+
+main .signUp nav{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+main .signUp nav a{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: black;
+}
+
+main .signUp h1{
+    font-size: 2em;
+}
+
+main .signUp form{
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+}
+
+main .signUp form label{
+    font-size: 1.2em;
+}
+
+main .signUp form input{
+    padding:  .9em;
+    font-size: 1.2em;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    background-color: rgb(238, 238, 238);
+}
+
+main .signUp form button{
+    background-color: black;
+    border: none;
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: .8em 0 .8em;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: .3em;
+    border-radius: 7px;
+}
+
+main .signUp p{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+main .signUp p a{
+    text-decoration: none;
+    color: rgb(5, 125, 161);
+    font-weight: bold;
+}
+
+main .userQuotes{
+    /* border: 2px solid black; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 246, 246);
+    width: 45vw;
+    
+}
+
+main .userQuotes .quotesContainer{
+    width: 50%;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+main .userQuotes .quotesContainer div{
+    display: flex;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+
+main .userQuotes .quotesContainer div h1{
+    display: flex;
+    flex-direction: column;
+}
+
+main .userQuotes .quotesContainer div h1 span{
+    color: rgb(121, 121, 121);
+    font-weight: lighter;
+}
+
+main .userQuotes .quotesContainer q{
+    /* border: 2px solid black; */
+    font-size: 1.2em;
+    font-weight: bold;
+    line-height: 1.6em;
+}
+
+@media (max-width: 768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid black; */
+    }
+    
+    main .signUp{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 2vw 10vw;
+        width: 100%;
+    }
+    
+    main .signUp nav{
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+    
+    main .signUp nav a{
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        text-decoration: none;
+        color: rgb(76, 76, 76);
+        font-weight: bold;
+    }
+    
+    main .signUp h1{
+        font-size: 2em;
+    }
+    
+    main .signUp form{
+        display: flex;
+        flex-direction: column;
+        gap: .8em;
+    }
+    
+    main .signUp form label{
+        font-size: 1.2em;
+    }
+    
+    main .signUp form input{
+        padding:  .9em;
+        font-size: 1.2em;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    main .signUp form button{
+        background-color: black;
+        border: none;
+        color: white;
+        width: 90%;
+        margin: 0 auto;
+        pa45vwdding: .8em 0 .8em;
+        font-weight: bold;
+        font-size: 1.1em;
+        margin-top: .3em;
+        border-radius: 7px;
+    }
+    
+    main .signUp p{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.2em;
+    }
+    
+    main .signUp p a{
+        text-decoration: none;
+        color: rgb(5, 125, 161);
+        font-weight: bold;
+    }
+    
+    main .userQuotes{
+        /* border: 2px solid black; */
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 246, 246);
+        width: 100%;
+        
+    }
+    
+    main .userQuotes .quotesContainer{
+        width: 80%;
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid black; */
+    }
+    
+    main .userQuotes .quotesContainer div{
+        display: flex;
+        align-items: center;
+        /* border: 2px solid black; */
+    }
+    
+    
+    main .userQuotes .quotesContainer div h1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main .userQuotes .quotesContainer div h1 span{
+        color: rgb(121, 121, 121);
+        font-weight: lighter;
+    }
+    
+    main .userQuotes .quotesContainer q{
+        /* border: 2px solid black; */
+        font-size: 1.2em;
+        font-weight: bold;
+        line-height: 1.6em;
+    } 
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid black; */
+    }
+    
+    main .signUp{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        padding: 2vw 10vw;
+        width: 100%;
+    }
+    
+    main .signUp nav{
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+    
+    main .signUp nav a{
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        text-decoration: none;
+        color: rgb(76, 76, 76);
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    
+    main .signUp h1{
+        font-size: 2em;
+    }
+    
+    main .signUp form{
+        display: flex;
+        flex-direction: column;
+        gap: .8em;
+        width: 80%;
+        /* border: 2px solid black; */
+    }
+    
+    main .signUp form label{
+        font-size: 1.5em;
+    }
+    
+    main .signUp form input{
+        padding:  .9em;
+        font-size: 1.4em;
+        border-radius: 7px;
+        border: none;
+        outline: none;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    main .signUp form button{
+        background-color: black;
+        border: none;
+        color: white;
+        width: 90%;
+        margin: 0 auto;
+        pa45vwdding: .8em 0 .8em;
+        font-weight: bold;
+        font-size: 1.3em;
+        margin-top: .3em;
+        border-radius: 7px;
+    }
+    
+    main .signUp p{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 1.4em;
+    }
+    
+    main .signUp p a{
+        text-decoration: none;
+        color: rgb(5, 125, 161);
+        font-weight: bold;
+        font-size: 1em;
+    }
+    
+    main .userQuotes{
+        /* border: 2px solid black; */
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 246, 246);
+        width: 100%;
+        
+    }
+    
+    main .userQuotes .quotesContainer{
+        width: 80%;
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid black; */
+    }
+    
+    main .userQuotes .quotesContainer div{
+        display: flex;
+        align-items: center;
+        /* border: 2px solid black; */
+    }
+    
+    
+    main .userQuotes .quotesContainer div h1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main .userQuotes .quotesContainer div h1 span{
+        color: rgb(121, 121, 121);
+        font-weight: lighter;
+    }
+    
+    main .userQuotes .quotesContainer q{
+        /* border: 2px solid black; */
+        font-size: 1.5em;
+        font-weight: bold;
+        line-height: 1.6em;
+    } 
+}

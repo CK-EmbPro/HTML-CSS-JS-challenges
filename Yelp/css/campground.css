@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 3vw 7vw;
+    align-items: center;
+    gap: 3vw;
+}
+
+nav .hiddenDiv{
+    display: none;
+}
+
+nav .arrowBtn{
+    display: none;
+}
+
+nav .navDiv{
+    display: flex;
+    align-items: center;
+    gap: 60vw;
+    color: rgb(63, 63, 63);
+
+}
+
+nav .navDiv h1 a{
+    color: black;
+    text-decoration: none;
+}
+
+nav .navDiv ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2em;
+   
+}
+
+.addNewCamp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.addNewCamp h1{
+    font-size: 2em;
+    width: 30%;
+}
+
+.addNewCamp form{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: .9em;
+}
+
+.addNewCamp form input{
+    padding: 1.1em;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    outline: none;
+}
+
+.addNewCamp form label{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: rgb(126, 126, 126);
+
+}
+
+.addNewCamp form textarea{
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(244, 244, 244);
+    resize: none;
+
+}
+
+.addNewCamp form button{
+    background-color: black;
+    color: white;
+    padding: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 7px;
+}
+
+
+footer{
+    padding:3vw 7vw;
+}
+
+
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        padding: 7vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .hiddenDiv{
+        display: none;
+        position: absolute;
+        background-color: rgb(99, 99, 99);
+        flex-direction: column;
+        width: 15em;
+        height:7em;
+        top: 13vw;
+        left: 60vw;
+        align-items: center;
+        gap: 1.4em;
+        border-radius: 7px;
+    }
+
+    nav .hiddenDiv ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-weight: bold;
+        /* border: 2px solid red; */
+        gap: 1.4em;
+        align-items: center;
+    }
+    nav .arrowBtn{
+        display: block;
+        background: transparent;
+        border: none;
+        position: relative;
+
+    }
+
+    nav .arrowBtn i{
+        font-size: 1.7em;
+    }
+    
+    nav .navDiv{
+        display: none;
+        align-items: center;
+        gap: 60vw;
+        color: rgb(63, 63, 63);
+    
+    }
+    
+    nav .navDiv ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 2em;
+       
+    }
+    
+    .addNewCamp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding: 2vw 5vw;
+    }
+    
+    .addNewCamp h1{
+        font-size: 2em;
+        width: 100%;
+    }
+    
+    .addNewCamp form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: .9em;
+    }
+    
+    .addNewCamp form input{
+        padding: 1.1em;
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(244, 244, 244);
+        outline: none;
+    }
+    
+    .addNewCamp form label{
+        font-size: 1.2em;
+        font-weight: bold;
+        color: rgb(126, 126, 126);
+    
+    }
+    
+    .addNewCamp form textarea{
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(244, 244, 244);
+        resize: none;
+    
+    }
+    
+    .addNewCamp form button{
+        background-color: black;
+        color: white;
+        padding: 1.1em;
+        font-weight: bold;
+        border: none;
+        border-radius: 7px;
+    }
+    
+    
+    footer{
+        padding:3vw 7vw;      
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    nav{
+        display: flex;
+        padding: 7vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .hiddenDiv{
+        display: none;
+        position: absolute;
+        background-color: rgb(99, 99, 99);
+        flex-direction: column;
+        width: 15em;
+        height:7em;
+        top: 13vw;
+        left: 68vw;
+        align-items: center;
+        gap: 1.4em;
+        border-radius: 7px;
+    }
+
+    nav .hiddenDiv ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        font-weight: bold;
+        /* border: 2px solid red; */
+        gap: 1.4em;
+        align-items: center;
+    }
+
+    nav .arrowBtn{
+        display: block;
+        background: transparent;
+        border: none;
+    }
+
+    nav .arrowBtn i{
+        font-size: 1.7em;
+    }
+    
+    nav .navDiv{
+        display: none;
+        align-items: center;
+        gap: 60vw;
+        color: rgb(63, 63, 63);
+    
+    }
+    
+    nav .navDiv ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 2em;
+       
+    }
+    
+    .addNewCamp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding: 2vw 5vw;
+        width: 90vw;
+    }
+    
+    .addNewCamp h1{
+        font-size: 2em;
+        width: 100%;
+    }
+    
+    .addNewCamp form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: .9em;
+    }
+    
+    .addNewCamp form input{
+        padding: 1.1em;
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(244, 244, 244);
+        outline: none;
+    }
+    
+    .addNewCamp form label{
+        font-size: 1.2em;
+        font-weight: bold;
+        color: rgb(126, 126, 126);
+    
+    }
+    
+    .addNewCamp form textarea{
+        border-radius: 7px;
+        border: none;
+        background-color: rgb(244, 244, 244);
+        resize: none;
+    
+    }
+    
+    .addNewCamp form button{
+        background-color: black;
+        color: white;
+        padding: 1.1em;
+        font-weight: bold;
+        border: none;
+        border-radius: 7px;
+    }
+    
+    
+    footer{
+        padding:3vw 7vw;      
+    }
+}

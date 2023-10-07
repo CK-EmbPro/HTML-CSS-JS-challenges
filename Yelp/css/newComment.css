@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    display: flex;
+    padding: 3vw 7vw;
+    align-items: center;
+    gap: 3vw;
+}
+
+nav .arrowBtn{
+    display: none;
+}
+
+nav .navDiv{
+    display: flex;
+    align-items: center;
+    gap: 60vw;
+    color: rgb(63, 63, 63);
+
+}
+
+nav .navDiv ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2em;
+   
+}
+
+.addComment{
+    /* border: 2px solid black; */
+    width: 35vw;
+    gap: 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addComment h1{
+    font-size: 1.8em;
+    /* text-align: center; */
+}
+
+.addComment form{
+    display: flex;
+    /* border: 2px solid black; */
+    flex-wrap: wrap;
+    gap: .8em;
+}
+
+.addComment form label{
+    font-size: 1.2em;
+}
+
+.addComment form textarea{
+    height: 50%;
+    /* border: 2px solid red; */
+    resize: none;
+    width: 100%;
+    padding: 1em;
+    font-size: 1.3em;
+    border-radius: 7px;
+    border: none !important;
+    outline: none !important;
+    background-color: rgb(236, 236, 236);
+    /* display: block; */
+}
+
+
+.addComment form button{
+    width: 95%;
+    margin: 0 auto;
+    padding: 15px;
+    font-weight: bold !important;
+    color: white !important;
+    background-color: black !important;
+    border: none;
+    border-radius: 7px;
+}
+
+
+footer{
+    padding:3vw 7vw;
+}
+
+
+@media (max-width: 768px) {
+    nav{
+        display: flex;
+        padding: 7vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .arrowBtn{
+        display: block;
+        background: rgb(228, 228, 228);
+        border: none;
+        padding: 5px;
+        border-radius: 7px;
+    }
+
+    nav .arrowBtn i{
+        font-size: 1em;
+    }
+    
+    nav .navDiv{
+        display: none;
+        align-items: center;
+        gap: 60vw;
+        color: rgb(63, 63, 63);
+    
+    }
+    
+    nav .navDiv ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 2em;
+       
+    }
+    
+    .addComment{
+        /* border: 2px solid black; */
+        width: 85vw;
+        gap: 1zem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px auto 40px;
+    }
+    
+    .addComment h1{
+        font-size: 1.8em;
+        /* text-align: center; */
+    }
+    
+    .addComment form{
+        display: flex;
+        /* border: 2px solid black; */
+        flex-wrap: wrap;
+        gap: .8em;
+    }
+    
+    .addComment form label{
+        font-size: 1.2em;
+    }
+    
+    .addComment form textarea{
+        height: 50%;
+        /* border: 2px solid red; */
+        resize: none;
+        width: 100%;
+        padding: 1em;
+        font-size: 1.3em;
+        border-radius: 7px;
+        border: none !important;
+        outline: none !important;
+        background-color: rgb(236, 236, 236);
+        /* display: block; */
+    }
+    
+    
+    .addComment form button{
+        width: 95%;
+        margin: 0 auto;
+        padding: 15px;
+        font-weight: bold !important;
+        color: white !important;
+        background-color: black !important;
+        border: none;
+        border-radius: 7px;
+    }
+    
+    footer{
+        padding:3vw 7vw;      
+    }
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    nav{
+        display: flex;
+        padding: 7vw;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav .arrowBtn{
+        display: block;
+        background: rgb(228, 228, 228);
+        border: none;
+        padding: 5px;
+        border-radius: 7px;
+    }
+
+    nav .arrowBtn i{
+        font-size: 1.4em;
+    }
+    
+    nav .navDiv{
+        display: none;
+        align-items: center;
+        gap: 60vw;
+        color: rgb(63, 63, 63);
+    
+    }
+    
+    nav .navDiv ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 2em;
+       
+    }
+
+    .addComment{
+        /* border: 2px solid black; */
+        width: 80vw;
+        gap: 1em;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .addComment h1{
+        font-size: 1.8em;
+        /* text-align: center; */
+    }
+    
+    .addComment form{
+        display: flex;
+        /* border: 2px solid black; */
+        flex-wrap: wrap;
+        gap: .8em;
+    }
+    
+    .addComment form label{
+        font-size: 1.2em;
+    }
+    
+    .addComment form textarea{
+        height: 50%;
+        /* border: 2px solid red; */
+        resize: none;
+        width: 100%;
+        padding: 1em;
+        font-size: 1.3em;
+        border-radius: 7px;
+        border: none !important;
+        outline: none !important;
+        background-color: rgb(236, 236, 236);
+        /* display: block; */
+    }
+    
+    
+    .addComment form button{
+        width: 95%;
+        margin: 0 auto;
+        padding: 15px;
+        font-weight: bold !important;
+        color: white !important;
+        background-color: black !important;
+        border: none;
+        border-radius: 7px;
+    }
+    
+   
+    
+    footer{
+        padding:3vw 7vw;      
+    }
+}
